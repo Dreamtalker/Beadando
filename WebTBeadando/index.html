@@ -15,7 +15,7 @@
 			});
 		});
 		
-			$.getJSON('news.json', function(data){
+		$.getJSON('news.json', function(data){
 			$(data).each(function(index,val){	
 				
 				var newsTitleEntry=document.createElement("div");
@@ -39,6 +39,19 @@
 </script>
 </head>
 <body>
-
+	<div id="page">
+		<div id="mainMenu">
+			<ul>
+				<li><img src="logo.jpg"></li>
+				<li><a href="mainPage.html">Főoldal</a></li>
+				<li><a href="test.html">Játék</a></li>
+				<li><a href="tortenet.html">Történet</a></li>
+				<li><a href="ertekeles.html">Értékelés</a></li>
+			</ul>
+		</div>
+		<div id="header"></div>
+		<div id="newsContainer"></div>
+		<div id="content"></div>
+	</div>
 </body>
 </html>

@@ -6,5 +6,32 @@
 </head>
 <body>
 
+
+
+<p> Add meg a neved: <input id="nev" type="text">
+<p> Értékeld a játékot 1-10-ig: <input id="ertek" type="number">
+<p> <input type="button" value="Küldés" onclick="validateForm();">
+
+<script>
+function validateForm() {
+    var x = document.getElementById("nev").value;
+    var y = document.getElementById("ertek").value;
+    var ok = 0;
+    if (x == null || x == "") {
+        alert("Kérlek add meg a neved");
+        ok = 1;
+        return false;
+    }
+    if (y == null || y < 1 || y > 10) {
+        alert("Kérlek értékeld a játékot 1-10-ig");
+        ok = 1;
+        return false;
+    }
+    if (ok == 0){
+    	alert("Köszönjük az értékelésed, " +x);
+    }
+}
+</script>
+
 </body>
 </html>

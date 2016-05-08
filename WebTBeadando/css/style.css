@@ -57,11 +57,27 @@ body {
 	color:white;
 }
 
+div.gameimg {
+    margin: 5%;    
+    border: 1px solid #ccc;
+    width: 70%;
+}
+
+div.gameimg:hover {
+    border: 1px solid #777;
+}
+
+div.gameimg img {
+    width: 100%;
+    float: center;
+    height: auto;
+}
+
 div.charimg {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 220px;
+    width: 250px;
 }	
 
 div.charimg:hover {

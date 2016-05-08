@@ -1,0 +1,17 @@
+[
+{
+"title": "Green Shifter",
+"text": "A játék project neve a szavazás jelen állása szerint Magic Mushroom."
+}, {
+"title": "Megérkezett a játék első karaktere",
+"text": "A játék első karaktere megnézhető a Karakterek menüpontban, viszont még nem játszható."
+},{
+"title": "Kijavítottuk a hibát",
+"text": "A hibát javítottuk. Köszönjük a türelmeteket."
+}, {
+"title": "Tudunk a hibáról",
+"text": "Tuddunk arról a hibáról ami miatt a karakter egy idő után nem mozog. Jelenleg is dolgozunk a hiba kijavításán."
+}, {
+"title": "Megérkezett a játék első játszható verziója",
+"text": "Ma reggel felkerült a honlapra az első játszható verziója a LD35-re készült játéknak"
+}]

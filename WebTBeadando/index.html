@@ -3,6 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#mainMenu li a').each(function(){
+			$(this).click(function(event){
+				event.preventDefault();
+				//alert($(this).text()+' - '+$(this).attr('href'));
+				$('#content').load($(this).attr('href'));
+			});
+		});
+		
+			$.getJSON('news.json', function(data){
+			$(data).each(function(index,val){	
+				
+				var newsTitleEntry=document.createElement("div");
+				$(newsTitleEntry).html(val['title']);
+				$(newsTitleEntry).addClass('newsTitle');
+				
+				var newsTextEntry=document.createElement("span");
+				$(newsTextEntry).html(val['text']);
+				$(newsTextEntry).addClass('newsText');
+				
+				var newsItemEntry=document.createElement("div");
+				$(newsItemEntry).addClass('newsItem');
+				$(newsItemEntry).append(newsTitleEntry);
+				$(newsItemEntry).append(newsTextEntry);
+				
+				$('#newsContainer').append(newsItemEntry);
+				
+			});
+		});
+	});
+</script>
 </head>
 <body>
 

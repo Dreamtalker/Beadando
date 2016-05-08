@@ -5,10 +5,9 @@ body {
 	font-family: Lucida Console;
 }
 
-#Menu {
-	display: inline-block;
-	height: 100px;
-	
+#banner {
+	background: #435271 url("ludumdare35.jpg") no-repeat center center;
+	min-height: 100px;
 }
 
 #page{	
@@ -32,4 +31,28 @@ body {
 #mainMenu ul li:HOVER{
 	color: grey;
 	background-color:grey;
+}
+#newsContainer{
+	width:20%;
+	min-height:40px;
+	float:right;
+	background-color:gray;
+	margin: 20px 10px;
+}
+
+#newsContainer .newsItem{
+	margin:10px;
+	background-color:gray;
+	padding:5px;
+	font-size:15px;
+}
+
+
+#newsContainer .newsItem .newsTitle{
+	margin:auto;
+	background-color:black;
+	padding:5px;
+	float:auto;	
+	font-size:20px;
+	color:white;
 }

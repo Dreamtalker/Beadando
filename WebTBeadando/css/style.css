@@ -5,11 +5,6 @@ body {
 	font-family: Lucida Console;
 }
 
-#banner {
-	background: #435271 url("ludumdare35.png") no-repeat center center;
-	min-height: 100px;
-}
-
 #page{	
 	margin: auto;
 	width: 80%; 
